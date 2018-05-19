@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Basic Shapes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container{
+                width: 100%;
+                display: block;
+                padding: 20px;
+            }
+            .holder{
+                width: 30%;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .code{
+                border: 2px solid gray;
+                width: 50%;
+            }
+            .shapes{
+                border: 1px solid black;
+            }
+            .point{
+                width: 10px;
+                height: 10px;
+                background: black;
+                border-radius: 50%;
+            }
+            .line{
+                width: 100px;
+                border: 2px solid black;
+            }
+            .double-line{
+                width: 100px;
+                height: 2px;
+            }
+            .slant{
+                transform: rotate(30deg);
+            }
+            .square{
+                width: 100px;
+                height: 100px;
+            }
+            .rectangle{
+                width: 150px;
+                height: 50px;
+            }
+            .circle{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            .oval{
+                width: 100px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            .arc{
+                width: 100px;
+                height: 100px;
+                border-top-left-radius: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>
+                
+                <h2>Point</h2>
+                <div class="container">
+                    <div class="holder">
+                        <div class="shapes point"></div>
+                    </div>
+                    <div class="holder code">
+<pre>
+    .point{
+        width: 10px;
+        height: 10px;
+        background: black;
+        border-radius: 50%;
+    }
+</pre>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h2>Line</h2>
+                <ol>
+                    <li>
+                        <h2>Staight Line</h2>
+                        <div class="container">
+                            <div class="holder">
+                                <div class="shapes line"></div>
+                            </div>
+                            <div class="holder code">
+<pre>
+    .line{
+        width: 100px;
+        border: 2px solid black;
+    }
+</pre>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>Double Line</h2>
+                        <div class="container">
+                            <div class="holder">
+                                <div class="shapes double-line"></div>
+                            </div>
+                            <div class="holder code">
+<pre>
+    .double-line{
+        width: 100px;
+        height: 2px;
+    }
+</pre>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>Slant/ Angled Line</h2>
+                        <div class="container">
+                            <div class="holder">
+                                <div class="shapes double-line slant"></div>
+                            </div>
+                            <div class="holder code">
+<pre>
+    .double-line{
+        width: 100px;
+        height: 2px;
+    }
+
+    .slant{
+        transform: rotate(30deg);
+    }
+</pre>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                
+                <h2>Square</h2>
+                <div class="container">
+                    <div class="holder">
+                        <div class="shapes square"></div>
+                    </div>
+                    <div class="holder code">
+<pre>
+    .square{
+        width: 100px;
+        height: 100px;
+    }
+</pre>
+                    </div>
+                </div>
+            </li>
+            <li>
+                
+                <h2>Rectangle</h2>
+                <div class="container">
+                    <div class="holder">
+                        <div class="shapes rectangle"></div>
+                    </div>
+                    <div class="holder code">
+<pre>
+    .square{
+        width: 100px;
+        height: 100px;
+    }
+</pre>
+                    </div>
+                </div>
+            </li>
+            <li>
+                
+                <h2>Round</h2>
+                <ol>
+                    <li>
+                
+                        <h2>Circle</h2>
+                        <div class="container">
+                            <div class="holder">
+                                <div class="shapes circle"></div>
+                            </div>
+                            <div class="holder code">
+<pre>
+    .circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+</pre>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                
+                        <h2>Oval</h2>
+                        <div class="container">
+                            <div class="holder">
+                                <div class="shapes oval"></div>
+                            </div>
+                            <div class="holder code">
+<pre>
+    .oval{
+        width: 100px;
+        height: 50px;
+        border-radius: 50%;
+    }
+</pre>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>ARC</h2>
+                        <div class="container">
+                            <div class="holder">
+                                <div class="shapes arc"></div>
+                            </div>
+                            <div class="holder code">
+<pre>
+    .arc{
+        width: 100px;
+        height: 100px;
+        border-top-left-radius: 100%;
+    }
+</pre>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </body>
+</html>
