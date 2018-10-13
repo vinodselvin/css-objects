@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify-Logo</title>
+    <style>
+
+        *, ::before, ::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+
+        }
+
+        .spotify {
+            position: relative;
+            margin: 20px auto;
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            background-color: #75a621;
+            box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+            overflow: hidden;
+        }
+
+
+        .Curve {
+            position: absolute;
+            width: 320px;
+            height: 200px;
+            border-radius: 50%;
+            border: 30px solid black;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            transform: rotate(8deg) scale(.7);
+        }
+        .Curve::before,
+        .Curve::after {
+            content: '';
+            position: absolute;
+            width: 29px;
+            height: 29px;
+            border-radius: 50%;
+        }
+        .Curve::before {
+            top: 0;
+            left: 5px;
+        }
+        .Curve::after {
+            top: 1px;
+            right: 4px;
+        }
+
+        .topCurve {
+            top: 20px;
+            left: -40px;
+        }
+        .topCurve::before,
+        .topCurve::after {
+            background: black;
+        }
+
+        .midCurve {
+            top: 53px;
+            left: -44px;
+            transform: rotate(8deg) scale(.6);
+            border-top-color: black;
+        }
+        .midCurve::before,
+        .midCurve::after {
+            background: black;
+        }
+
+
+        .bottomCurve {
+            top: 80px;
+            left: -49px;
+            transform: rotate(8deg) scale(.5);
+            border-top-color: black;
+        }
+        .bottomCurve::before,
+        .bottomCurve::after {
+            background: black;
+        }
+    </style>
+</head>
+<body>
+<div class="spotify">
+    <div class="Curve topCurve"></div>
+    <div class="Curve midCurve"></div>
+    <div class="Curve bottomCurve"></div>
+</div>
+</body>
+</html>
