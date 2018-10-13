@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body{
+  width: 200px;
+  margin: 0 auto;
+  padding: 80px;
+}
+.box-shadow-apple-logo{
+  background: #000;
+  width: 208px;
+  height: 198px;
+  position: absolute;
+  border-radius: 36% 36% 41% 41% / 42% 42% 75% 75%;
+}
+
+.box-shadow-apple-logo:before{
+  background: #000;
+  content: "";
+	width: 55px;
+  height: 55px;
+  position: absolute;
+  margin: -51px 0 0 100px;
+  border-radius: 100px 0;
+  z-index: 5;
+}
+
+.box-shadow-apple-logo:after{
+  background: #fff;
+  content: "";
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  margin: 28px 0 0 174px;
+  border-radius: 50%;
+  transform: rotate(-53deg);
+  z-index: 4;
+  box-shadow: 
+    24px -154px 0 #fff,
+    10px -175px 0 #fff,
+    11px -171px 0 #fff,
+    12px -160px 0 #fff,
+    -215px -7px 0 #fff,
+    -195px 17px 0 #fff,
+    -198px 3px 0 #fff,
+    -198px 13px 0 #fff;
+}
+
+</style> 
+
+</head>
+<body>
+
+<div class="box-shadow-apple-logo"></div>
+
+
+</body>
+</html>
+
+
