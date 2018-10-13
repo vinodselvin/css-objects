@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+		body {
+			background: #000
+		}
+		
+		.switchme {
+			width: 85px;
+			padding: 5px;
+			border: 4px #fff solid;
+			position: relative;
+			height: 20px;
+			border-right: 0px;
+		}
+		
+		.switchme .text {
+			color: #fff;
+			font-size: 18px;
+			font-weight: bold;
+			left: 10px;
+			font-family: arial;
+			position: absolute;
+		}
+		
+		.switchme .top {
+			border-top: 4px #fff solid;
+			border-right: 4px #fff solid;			
+			display: block;
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			top: -3px;
+			right: -21px;
+			border-left: 0;
+		}
+		
+		.switchme .top:after {
+			border-top: 4px #fff solid;
+			content: "";
+			display: block;
+			width: 14px;
+			height: 10px;
+			position: absolute;
+			top: -6px;
+			right: 1px;
+			transform: rotate(135deg);
+		}
+		
+		.switchme .bot {
+			border-right: 4px #fff solid;
+			border-bottom: 4px #fff solid;			
+			display: block;
+			width: 17px;
+			height: 10px;
+			position: absolute;
+			bottom: -4px;
+			right: -21px;
+		}
+	</style>
+    </head>
+    <body>
+        <div class="switchme">
+        	<div class="top"></div>
+        	<div class="bot"></div>
+            <div class="text">
+                SwitchMe
+            </div>
+        </div>
+    </body>
+</html> 
