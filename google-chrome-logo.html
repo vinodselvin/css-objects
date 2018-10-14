@@ -1,0 +1,163 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+}
+#container > .logo {
+  display: inline-block;
+  margin: 20px 10px;
+}
+
+.logo.chrome {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  height: 210px;
+  width: 210px;
+  z-index: 1;
+}
+.logo.chrome .center {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: #0d6cac;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #91c1e7), color-stop(100%, #0d6cac));
+  background: -webkit-linear-gradient(top center, #91c1e7, #0d6cac);
+  background: -moz-linear-gradient(top center, #91c1e7, #0d6cac);
+  background: -o-linear-gradient(top center, #91c1e7, #0d6cac);
+  background: linear-gradient(top center, #91c1e7, #0d6cac);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  margin-top: -41px;
+  margin-left: -40px;
+  border-bottom: solid 1px #125e90;
+  z-index: 10;
+}
+.logo.chrome .circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  background: white;
+  top: 50%;
+  left: 50%;
+  height: 94px;
+  width: 94px;
+  margin-top: -48px;
+  margin-left: -47px;
+  z-index: 5;
+}
+.logo.chrome .part-1 {
+  background: #e93c35;
+  position: absolute;
+  top: 0;
+  left: 34px;
+  width: 200px;
+  height: 58px;
+}
+.logo.chrome .part-1:after {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+  content: " ";
+  background: #e93c35;
+  position: absolute;
+  top: 0;
+  left: -91px;
+  width: 200px;
+  height: 58px;
+}
+.logo.chrome .part-2 {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+  background: #fdd901;
+  position: absolute;
+  top: 131px;
+  left: 56px;
+  width: 200px;
+  height: 65px;
+}
+.logo.chrome .part-2:after {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+  content: " ";
+  background: #fdd901;
+  position: absolute;
+  top: 0;
+  left: -91px;
+  width: 200px;
+  height: 58px;
+}
+.logo.chrome .part-3 {
+  -webkit-transform: rotate(-120deg);
+  -moz-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  -o-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+  background: #5bc15b;
+  position: absolute;
+  top: 88px;
+  left: -74px;
+  width: 200px;
+  height: 65px;
+}
+.logo.chrome .part-3:after {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+  content: " ";
+  background: #5bc15b;
+  position: absolute;
+  top: 0;
+  left: -91px;
+  width: 200px;
+  height: 58px;
+}
+</style>
+</head>
+<body>
+    <div id="container">
+      <div class="logo chrome">
+        <div class="part-1"></div>
+        <div class="part-2"></div>
+        <div class="part-3"></div>
+        <div class="circle"></div>
+        <div class="center"></div>
+      </div>
+    </div>
+ </body>
+ </html>
