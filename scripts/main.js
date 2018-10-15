@@ -12,8 +12,8 @@ $("document").ready(function() {
  * when an anchor tag is clicked
  */
 function bindAnchorTags() {
-    $('a').attr("target", "modalIframe");
-    $('a').click(function(e) {
+    $('a.objects').attr("target", "modalIframe");
+    $('a.objects').click(function(e) {
         e.preventDefault();
         $("#modalIframe").attr("src", $(this).attr("href"));
         setModalVisible(true);
