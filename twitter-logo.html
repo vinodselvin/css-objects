@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  display: inline-block;
+  float: left;
+  height: 240px;
+  margin: -120px 0 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  width: 33.33%;
+}
+
+
+/* Twitter Bird */
+
+.twitter-bird {
+    background-image: url(http://minimalmonkey.com/lab/css3-animations/twitter-bird-sprite.png);
+    cursor: pointer;
+    display: inline-block;
+    height: 150px;
+  margin: 50px -30% 0 0;
+    width: 150px;
+}
+
+.twitter-bird:hover {
+    -webkit-animation: fly 0.2s steps(3) 0 infinite;
+    -moz-animation: fly 0.2s steps(3) 0 infinite;
+    animation: fly 0.2s steps(3) 0 infinite;
+}
+
+@-webkit-keyframes fly {
+    from { background-position: 0 0; }
+    to { background-position: -450px 0; }
+}
+@-moz-keyframes fly {
+    from { background-position: 0 0; }
+    to { background-position: -450px 0; }
+}
+@keyframes fly {
+    from { background-position: 0 0; }
+    to { background-position: -450px 0; }
+}
+
+/* Logo */
+
+.logo {
+    background-image: url(http://minimalmonkey.com/lab/css3-animations/logo.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  display: inline-block;
+    height: 150px;
+    margin: 50px 50px 0;
+    width: 154px;
+}
+
+.logo:hover {
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+    -moz-animation-name: bounce;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 1;
+
+    -webkit-animation-name: bounce;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes bounce {
+    45% {
+        height: 130px;
+        margin-top: 70px;
+    }
+    55% {
+        height: 130px;
+        margin-top: 70px;
+    }
+    75% {
+        height: 170px;
+        margin-top: 0px;
+    }
+}
+@-moz-keyframes bounce {
+    45% {
+        height: 130px;
+        margin-top: 70px;
+    }
+    55% {
+        height: 130px;
+        margin-top: 70px;
+    }
+    75% {
+        height: 170px;
+        margin-top: 0px;
+    }
+}
+@keyframes bounce {
+    45% {
+        height: 130px;
+        margin-top: 70px;
+    }
+    55% {
+        height: 130px;
+        margin-top: 70px;
+    }
+    75% {
+        height: 170px;
+        margin-top: 0px;
+    }
+}
+
+/* Button */
+.button {
+    background-color: #26bf4a;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    letter-spacing: 2px;
+    line-height: 60px;
+  margin: 90px 0 0 -20%;
+    min-width: 220px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: background-color 0.35s;
+  -moz-transition: background-color 0.35s;
+  transition: background-color 0.35s;
+}
+
+.label {
+    display: block;
+    height: 100%;
+    padding: 0 40px;
+    position: relative;
+    top: 0%;
+  -webkit-transition: top 0.35s;
+  -moz-transition: top 0.35s;
+  transition: top 0.35s;
+  width: 100%;
+}
+
+.button:hover {
+    background-color: #1d9f3b;
+}
+
+.button:hover .label {
+    top: -100%;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+  <div class="twitter-bird step"></div>
+</div>
+
+<div class="container">
+  <div class="logo"></div>
+</div>
+
+<div class="container">
+  <div class="button">
+    <span class="label">Button</span>
+    <span class="label">Button</span>
+  </div>
+</div>
+    </body>
+</html> 
