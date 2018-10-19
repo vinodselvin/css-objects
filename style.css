@@ -2,6 +2,12 @@ body {
     background-color:#C1FFD0;
 
 }
+.jumbortan h2{
+    color:#A358B7;
+    font-family: Helvetica, sans-serif;
+    font-weight:lighter;
+    font-size: 60px
+}
 .list-group-item {
    background-color:#A3FFB7;
    background-image: linear-gradient( .75turn, #A3FFB7 , #6AFFB7);
