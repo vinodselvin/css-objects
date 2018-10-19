@@ -1,3 +1,8 @@
 .list-group-item {
    background-color:#A3FFB7
 }
+
+a {
+    text-decoration: none;
+    color: #A358B7;
+}
