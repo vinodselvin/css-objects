@@ -3,7 +3,6 @@
  * site wide events
  */
 $("document").ready(function() {
-
     bindAnchorTags();
 });
 
@@ -27,9 +26,5 @@ function bindAnchorTags() {
  * @param state  - the state of the modal's visibility 
  */
 function setModalVisible(state) {
-    if(state == true) {
-        $("#modalIframeContainer").modal('show');
-    } else {
-        $("#modalIframeContainer").modal('hide');
-    }
+    $("#modalIframeContainer").modal(state == true ? 'show' : 'hide');
 }
