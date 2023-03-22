@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SwitchMe Logo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Maven+Pro:700');
+
+        span {
+            position: relative;
+            display: table;
+            margin-top: 15px;
+            padding: 10px 40px 10px 15px;
+            background: #26b78b;
+            border: 10px solid #fff;
+            outline: 10px solid #26b78b;
+            color: #fff;
+            font-family: 'Maven Pro', sans-serif;
+            font-size: 50px;
+        }
+
+        span::after {
+            content: '';
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            height: 35px;
+            width: 35px;
+            background: #26b78b;
+            border-top: 10px solid #fff;
+            border-right: 10px solid #fff;
+            outline: 10px solid #26b78b;
+        }
+
+        span:before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            right: 3px;
+            z-index: 2;
+            height: 45px;
+            width: 10px;
+            background: #fff;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <span>
+        SwitchMe
+    </span>
+</body>
+
+</html>
