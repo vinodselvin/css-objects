@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rockstar studios</title>
+  <style>
+  .rockstar {
+    background-color: #E23327;
+    width: 100px;
+    height: 120px;
+    font-size: 100px;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 20px;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .star {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: red;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid white;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg) scale(0.3) skewY(5deg);
+    text-align: right;
+    margin-top: -50px;
+    margin-left: -20px;
+  }
+  .star:before {
+    border-bottom: 80px solid white;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+  .star:after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid white;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="rockstar">
+    <span class="r">R</span>
+    <span class="star"></span>
+  </div>
+</div>
+</body></html>
