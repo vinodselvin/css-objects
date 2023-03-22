@@ -3,7 +3,6 @@
  * site wide events
  */
 $("document").ready(function() {
-
     bindAnchorTags();
 });
 
@@ -12,8 +11,8 @@ $("document").ready(function() {
  * when an anchor tag is clicked
  */
 function bindAnchorTags() {
-    $('a').attr("target", "modalIframe");
-    $('a').click(function(e) {
+    $('a.objects').attr("target", "modalIframe");
+    $('a.objects').click(function(e) {
         e.preventDefault();
         $("#modalIframe").attr("src", $(this).attr("href"));
         setModalVisible(true);
@@ -27,9 +26,5 @@ function bindAnchorTags() {
  * @param state  - the state of the modal's visibility 
  */
 function setModalVisible(state) {
-    if(state == true) {
-        $("#modalIframeContainer").modal('show');
-    } else {
-        $("#modalIframeContainer").modal('hide');
-    }
+    $("#modalIframeContainer").modal(state == true ? 'show' : 'hide');
 }
